@@ -1,14 +1,14 @@
-# Welcome to your CDK TypeScript project!
+# cdk-stack-exceeded-test
 
-This is a blank project for TypeScript development with CDK.
+Minimal code reproducing maximum call stack error
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+```sh
+cdk synth --context role_arn=arn:aws:iam::XXXXXXXXXXXX:role/XXXXXXXXXXXXXXXXXXXXXXXXXX
+```
 
-## Useful commands
+and we get following error
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+```
+Maximum call stack size exceeded
+Subprocess exited with error 1
+```
