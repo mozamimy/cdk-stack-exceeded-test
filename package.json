@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@aws-cdk/aws-iam": "^1.75.0",
+    "@aws-cdk/aws-lambda": "^1.75.0",
     "@aws-cdk/aws-lambda-nodejs": "^1.75.0",
     "@aws-cdk/core": "1.75.0",
     "@types/aws-lambda": "^8.10.64",
